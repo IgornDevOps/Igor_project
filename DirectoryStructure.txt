@@ -1,0 +1,71 @@
+Directory structure:
+--------------------
+
+devops_project/
+│
+├── Step1/
+│   ├── rick_and_morty.py
+│   ├── rick_and_morty_characters.csv
+│   └── ...
+│
+├── Step2/
+│   ├── Dockerfile
+│   ├── requirements.txt  
+│   ├── rick_and_morty.py  
+│   └── ...
+│
+├── Step3/
+│   ├── yamls/
+│   │   ├── deployment.yml
+│   │   ├── service.yml
+│   │   ├── ingress.yml
+│   │   └── ...
+│   └── ...
+│
+├── Step4/
+│   ├── rick_and_morty_chart
+│   │   ├── charts/
+│   │   │   └── ...
+│   │   ├── templates/
+│   │   │   ├── tests/
+│   │   │   ├── ├── test-connection.yaml
+│   │   │   │   └── ...
+│   │   │   ├── _helpers.tpl
+│   │   │   ├── deployment.yaml
+│   │   │   ├── hpa.yaml
+│   │   │   ├── ingress.yaml
+│   │   │   ├── NOTES.txt
+│   │   │   ├── service.yaml
+│   │   │   ├── serviceaccount.yaml
+│   │   │   └── ...
+│   │   ├── .helmignore
+│   │   ├── Chart.yaml
+│   │   ├── Values.yaml
+│   │   └── ...
+│   └── ...
+│
+└── Step5/
+    ├── .github/
+    │   │   ├── workflows/
+    │   │   │   ├── kubernetes.yaml
+    │   │   │   └── ...
+    │   │   └── ...   
+    ├── charts/
+    │   └── ...
+    ├── templates/
+    │   ├── tests/
+    │   │   ├── ├── test-connection.yaml
+    │   │   │   └── ...
+    │   │   ├── _helpers.tpl
+    │   │   ├── deployment.yaml
+    │   │   ├── hpa.yaml
+    │   │   ├── ingress.yaml
+    │   │   ├── NOTES.txt
+    │   │   ├── service.yaml
+    │   │   ├── serviceaccount.yaml
+    │   │   └── ...
+    │   └── ...
+    ├── .helmignore
+    ├── Chart.yaml
+    ├── values.yaml
+    └── ...
