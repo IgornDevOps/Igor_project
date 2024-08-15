@@ -26,8 +26,8 @@ Usage:
 
 1. Make sure you have Python installed on your system.
 2. Make sure you have docker installed on your system.
-3. Clone the repository (`git clone https://github.com/IgornDevOps/devops_project.git`).
-4. Enter the folder containing the files (`cd /devops_project/Step2`).
+3. Clone the repository (`git clone https://github.com/IgornDevOps/Igor_project.git`).
+4. Enter the folder containing the files (`cd /Igor_project/Step2`).
 5. Build the Docker image (`docker build -t rick_and_morty .`).
 6. run the Docker container (`docker run -itdp 5000:5000 rick_and_morty`).
 7. Check the generated rick_and_morty_characters.csv file in the same directory for the results.
@@ -45,16 +45,16 @@ Usage:
 
 1. Make sure you have Minikube installed on your system.
 2. Make sure you have Docker installed on your system.
-3. Clone the repository (`git clone https://github.com/IgornDevOps/devops_project.git`).
-4. Enter the folder containing the files (`cd /devops_project/Step3`).
+3. Clone the repository (`git clone https://github.com/IgornDevOps/Igor_project.git`).
+4. Enter the folder containing the files (`cd /Igor_project/Step3`).
 5. Build the Docker image (`docker build -t rick_and_morty .`).
 6. run (`kubectl apply -f deployment.yaml
          kubectl apply -f service.yaml
          kubectl apply -f ingress.yaml
          minikube addons enable ingress`).
 7. Run (`minikube service rick-and-morty-service`) this provides url to access endpoints.
-8. Health Check by running 'curl 192.168.59.100:31983/healthcheck' and type in the info from the previous step (ip and port).
-7. Retrieve list of characters by running 'curl 192.168.59.100:31983/characters' and type in the info from the previous step (ip and port).
+8. Health Check by running 'curl 192.168.59.100:31983/healthcheck' and type in the info from the previous step (ip and port) dont use my provided ip and port it is just for example.
+7. Retrieve list of characters by running 'curl 192.168.59.100:31983/characters' and type in the info from the previous step (ip and port) dont use my provided ip and port it is just for example.
 
 
 Step 4
@@ -70,8 +70,8 @@ Usage:
 2. Enter the folder containing the files (`cd /devops_project/Step4/rick_and_morty_chart`).
 3. Install the helm chart (` helm install rick-morty-api . --values values.yaml`)
 4. To access endpoints run (`minikube service rick-and-morty-service`) this provides url to access endpoints.
-5. Health Check by running 'curl 192.168.59.100:31983/healthcheck'(provide coordinates from previous step) and type in the info from the previous step (ip and port).
-6. Retrieve list of characters by running 'curl 192.168.59.100:31983/characters' and type in the info from the previous step (ip and port).
+5. Health Check by running 'curl 192.168.59.100:31983/healthcheck'(provide coordinates from previous step) and type in the info from the previous step (ip and port) dont use my provided ip and port it is just for example.
+6. Retrieve list of characters by running 'curl 192.168.59.100:31983/characters' and type in the info from the previous step (ip and port) dont use my provided ip and port it is just for example.
 
 
 Step5
@@ -94,7 +94,7 @@ Workflow steps:
 
 Usage:
 
-1. Clone the repo with git clone (`git clone https://github.com/IgornDevOps/devops_project.git`).
+1. Clone the repo with git clone (`git clone https://github.com/IgornDevOps/Igor_project.git`).
 2. Upload repo to your github with git init,git add .,git commit -m "describe commit",git push.
 3. Github actions will run automatically on push trigger.
 4. You can see the endpoints in the actions workflows under build>run tests.
