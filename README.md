@@ -66,8 +66,8 @@ This code deploys the Rick and Morty application on Kubernetes with the use of H
 
 Usage:
 
-1. Clone the repository (`git clone https://github.com/IgornDevOps/devops_project.git`).
-2. Enter the folder containing the files (`cd /devops_project/Step4/rick_and_morty_chart`).
+1. Clone the repository (`git clone https://github.com/IgornDevOps/Igor_project.git`).
+2. Enter the folder containing the files (`cd /Igor_project/Step4/rick_and_morty_chart`).
 3. Install the helm chart (` helm install rick-morty-api . --values values.yaml`)
 4. To access endpoints run (`minikube service rick-and-morty-service`) this provides url to access endpoints.
 5. Health Check by running 'curl 192.168.59.100:31983/healthcheck'(provide coordinates from previous step) and type in the info from the previous step (ip and port) dont use my provided ip and port it is just for example.
